@@ -1,0 +1,30 @@
+{
+    "name": "rave/module-payment",
+    "description": "Rave payment gateway for accepting payments via credit/debit cards, bank accounts, Mpesa, Ghana Mobile Money and Barter on your Magento store.",
+    "authors": [
+        {
+            "name": "Nnamadim Uchenna",
+            "email": "nnamadimuche@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.1.3||~7.2.0",
+        "composer/installers": "^1.6",
+        "magento/magento-composer-installer": "^0.1.13",
+        "magento/module-sales": "*",
+        "magento/module-checkout": "*",
+        "magento/module-payment": "*",
+        "magento/framework": "*"
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Rave\\Payments\\": ""
+        }
+    }
+}

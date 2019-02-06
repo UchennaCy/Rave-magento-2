@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+        <event name="sales_order_place_after">
+        <observer name="AfterOrderObserver" instance="Rave\Observer\AfterOrderObserver" />
+    </event>
+    <event name="payment_verify_after">
+        <observer name="AfterPaymentVerifyObserver" instance="Rave\Observer\AfterPaymentVerifyObserver" />
+    </event>
+
+    <!-- <event name="payment_method_assign_data">
+        <observer name="sample_payment_gateway_data_assign" instance="Magento\SamplePaymentGateway\Observer\DataAssignObserver" />
+    </event> -->
+</config>
